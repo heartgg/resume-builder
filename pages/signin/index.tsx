@@ -33,7 +33,7 @@ function Page() {
                     <p>Password</p>
                     <input onChange={(e) => setPassword(e.target.value)} required type="password" name="password" id="password" placeholder="password" />
                 </label>
-                <button type="submit">Sign up</button>
+                <button type="submit">Sign In</button>
             </form>
         </div>
     </div>);
