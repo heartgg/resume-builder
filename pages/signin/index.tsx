@@ -36,7 +36,6 @@ function Page() {
                 <button type="submit">Sign up</button>
             </form>
         </div>
-
     </div>);
 }
 
