@@ -34,6 +34,8 @@ function Page() {
                     <input onChange={(e) => setPassword(e.target.value)} required type="password" name="password" id="password" placeholder="password" />
                 </label>
                 <button type="submit">Sign up</button>
+                <br /><br />
+                <h3 onClick={() => router.push("/signin")}>Sign In</h3>
             </form>
         </div>
     </div>);
