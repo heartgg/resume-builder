@@ -11,7 +11,7 @@ function Page() {
     const { user } = useAuthContext()
     const router = useRouter()
     const [resumes, setResumes] = useState([])
-    const [currentResume, setCurrentResume] = useState()
+    const [currentResume, setCurrentResume] = useState<any>()
 
     React.useEffect(() => {
         if (user == null) router.push("/")
