@@ -3,6 +3,7 @@ import React from "react";
 import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 function Page() {
+    // @ts-ignore
     const { user } = useAuthContext()
     const router = useRouter()
 
