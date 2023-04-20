@@ -26,7 +26,7 @@ function Page() {
     const [skills, setSkills] = React.useState('')
 
     React.useEffect(() => {
-        if (user == null) router.push("/")
+        if (user == null) router.push("/signin")
     }, [user])
 
     const handleForm = async (event) => {
@@ -49,7 +49,7 @@ function Page() {
 
         // else successful
         console.log(result)
-        return router.push("/admin")
+        return router.push("/my-resumes")
     }
 
     const addProject = () => {

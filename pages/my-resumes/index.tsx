@@ -14,11 +14,14 @@ function Page() {
     const [currentResume, setCurrentResume] = useState<any>()
 
     React.useEffect(() => {
-        if (user == null) router.push("/")
+        if (user == null) router.push("/signin")
     }, [user])
 
     useEffect(() => {
-        retrieveResumes(user.uid).then(({result, error}) => {setResumes(result)})
+        if (user != null) {
+            retrieveResumes(user.uid).then(({result, error}) => {setResumes(result)})
+        }
+        
     })
 
     const viewResume = (index) => {
