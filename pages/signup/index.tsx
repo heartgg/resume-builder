@@ -45,11 +45,11 @@ function Page() {
             <form onSubmit={handleForm} className="form mt-2">
                 <label htmlFor="email">
                     <p>Email</p>
-                    <input className="w-full border-[1px] mb-2" onChange={(e) => setEmail(e.target.value)} required type="email" name="email" id="email" placeholder="example@mail.com" />
+                    <input className="w-full border-[1px] mb-2 p-2 rounded-md" onChange={(e) => setEmail(e.target.value)} required type="email" name="email" id="email" placeholder="example@mail.com" />
                 </label>
                 <label htmlFor="password">
                     <p>Password</p>
-                    <input className="w-full border-[1px] mb-2" onChange={(e) => setPassword(e.target.value)} required type="password" name="password" id="password" placeholder="password" />
+                    <input className="w-full border-[1px] mb-2 p-2 rounded-md" onChange={(e) => setPassword(e.target.value)} required type="password" name="password" id="password" placeholder="password" />
                 </label>
                 <button className="p-2 shadow-md rounded-lg w-full hover:bg-slate-100 mb-2 mt-2" type="submit">Sign In</button>
                 <Link className="text-sm text-center" href={"/signin"}>Already have an account? Sign In!</Link>
