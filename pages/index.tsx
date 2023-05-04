@@ -17,12 +17,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1 onClick={() => {router.push("/build-resume")}}>Build Resume</h1>
-        <h1 onClick={() => {router.push("/my-resumes")}}>View Resume</h1>
-        {user && (
-          <h2 onClick={() => {router.push("/signout")}}>Sign Out</h2>
-        )}
+      <main className='flex items-center justify-center h-screen from-green-300 to-teal-500 bg-gradient-to-r'>
+        <div className='shadow-md rounded-lg w-96 bg-white p-5'>
+          <h1 className='font-bold text-3xl text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-teal-500'>Resume Buddy</h1>
+          <hr />
+          <button className='p-2 shadow-md rounded-lg w-full hover:bg-slate-100 mb-2 mt-2' onClick={() => {router.push("/build-resume")}}>Build Resume</button>
+          <button className='p-2 shadow-md rounded-lg w-full hover:bg-slate-100 mb-2' onClick={() => {router.push("/my-resumes")}}>View Resume</button>
+          {user && (<button className='p-2 shadow-md rounded-lg w-full hover:bg-slate-100 mb-2' onClick={() => {router.push("/signout")}}>Sign Out</button>)}
+        </div>
       </main>
     </>
   )
